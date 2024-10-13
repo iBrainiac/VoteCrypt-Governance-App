@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTVOTE- Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="assets/logo.png" alt="Organization Logo" class="logo"> <!-- Add logo image -->
+        <h1>CRYPTVOTE</h1>
+    </header>
+
+    <!-- Registration Page -->
+    <div class="container">
+        <section id="registration-page">
+            <h2>Register as a Voter</h2>
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="text" id="department" placeholder="Enter Department" required>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <input type="text" id="wallet" placeholder="Enter Wallet Address" required>
+                
+                <p>Select Biometric Authentication:</p>
+                <label>
+                    <input type="radio" name="biometric" value="Face ID" required> Face ID
+                </label>
+                <label>
+                    <input type="radio" name="biometric" value="Fingerprint" required> Fingerprint
+                </label>
+                <div id="registrationError" class="error-msg"></div>
+                <div id="walletWarning" class="warning-msg"></div>
+
+                <button type="submit" class="primary-btn">Register</button>
+                <button type="button" class="secondary-btn" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+            </form>
+        </section>
+        <div id="registrationSuccess" class="success-msg" style="display: none;">You are now a registered voter!</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CRYPTVOTE. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - CRYPTVOTE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <main>
+        <h2>Pending Candidate Applications</h2>
+        <div id="pendingCandidates"></div>
+
+        <h2>Set Election Date and Time</h2>
+        <form id="electionDateForm">
+            <label for="electionDate">Election Date:</label>
+            <input type="date" id="electionDate" required>
+            <label for="electionTime">Election Time:</label>
+            <input type="time" id="electionTime" required>
+            <button type="submit">Set Election Date and Time</button>
+        </form>
+        <p id="electionDateDisplay"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Voting App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

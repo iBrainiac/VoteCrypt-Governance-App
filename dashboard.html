@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTVOTE - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <!-- Dashboard Page -->
+    <div class="container">
+        <section id="dashboard-page">
+            <div class="dashboard-header">
+                <img src="assets/logo.png" alt="Dashboard Icon" class="dashboard-icon"> <!-- Add dashboard icon -->
+                <h2>Welcome to the Dashboard</h2>
+                <p>Countdown to Election:  <div id="countdownTimer"></div></span></p>
+                
+                <!-- Check voter status before allowing to vote -->
+                <button class="primary-btn" id="voteBtn" onclick="checkVoterStatus()">Vote Now</button>
+
+                <!-- Register button -->
+                <button class="secondary-btn" onclick="location.href='registration.html'">Register as Voter</button>
+                <div id="voterStatusError" class="error-msg"></div>
+                 <!-- Apply to be a Candidate -->
+        <div class="apply-section">
+            <h3>Apply to be a Candidate</h3>
+            <button onclick="window.location.href='apply.html'">Apply Now</button>
+        </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
