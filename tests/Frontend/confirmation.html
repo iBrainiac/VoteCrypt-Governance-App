@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTVOTE - Confirm Vote</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Confirmation Page -->
+    <div class="container">
+        <section id="confirmation-page">
+            <div class="form-header">
+                <img src="assets/confirm-icon.png" alt="Confirm Icon" class="confirm-icon"> <!-- Add confirm icon -->
+                <h2>Confirm Your Vote</h2>
+            </div>
+            <p>Candidate for Department A: <span id="confirmA"></span></p>
+            <p>Candidate for Department B: <span id="confirmB"></span></p>
+            <button class="primary-btn" id="confirmVote" onclick="submitVote()">Confirm Vote</button>
+        </section>
+    </div>
+</body>
+</html>

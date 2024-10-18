@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTVOTE - Vote</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Voting Page -->
+    <div class="container">
+        <section id="voting-page">
+            <div class="form-header">
+                <img src="assets/vote-icon.png" alt="Vote Icon" class="vote-icon"> <!-- Add vote icon -->
+                <h2>Cast Your Vote</h2>
+            </div>
+            <form id="votingForm">
+                <p>Select a candidate for Department A:</p>
+                <select id="candidateA" required>
+                    <option value="Candidate 1">Candidate 1</option>
+                    <option value="Candidate 2">Candidate 2</option>
+                </select>
+                <p>Select a candidate for Department B:</p>
+                <select id="candidateB" required>
+                    <option value="Candidate 3">Candidate 3</option>
+                    <option value="Candidate 4">Candidate 4</option>
+                </select>
+                <button type="submit" class="primary-btn">Submit Vote</button>
+                <div id="voteError" class="error-msg"></div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

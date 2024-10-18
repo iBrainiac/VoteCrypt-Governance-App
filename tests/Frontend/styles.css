@@ -1,0 +1,525 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFBE6; /* Updated background color */
+    color: #347928; /* Updated text color */
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Header Styles */
+header {
+    background-color: #347928; /* Updated header background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #C0EBA6; /* Updated border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #C0EBA6; /* Highlighted text color */
+    animation: fadeInDown 1s ease-in-out; /* Add fade-in animation */
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Auth Section Styles */
+.auth-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.auth-section h2 {
+    color: #347928; /* Updated heading color */
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out; /* Add fade-in animation */
+}
+
+.auth-section p {
+    font-size: 1.2em;
+    color: #347928; /* Updated text color */
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in animation */
+}
+
+.auth-section button {
+    background-color: #C0EBA6; /* Highlighted button background color */
+    color: #347928;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to buttons */
+}
+
+.auth-section button:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+    transform: translateY(-2px); /* Add slight lift on hover */
+}
+
+/* Admin Panel Styles */
+.admin-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.admin-section h2 {
+    font-size: 2em;
+    color: #C0EBA6; /* Highlighted heading color */
+    margin-bottom: 20px;
+}
+
+.admin-section .candidate {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section .candidate p {
+    margin: 5px 0;
+}
+
+.admin-section button {
+    background-color: #347928; /* Updated button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-section button:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+/* Apply Section Styles */
+.apply-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.apply-section h2 {
+    font-size: 2em;
+    color: #C0EBA6; /* Highlighted heading color */
+    margin-bottom: 20px;
+}
+
+.apply-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+.apply-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #C0EBA6; /* Highlighted label color */
+}
+
+.apply-section input[type="text"],
+.apply-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apply-section button {
+    background-color: #347928; /* Updated button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-section button:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in animation */
+}
+
+form h2 {
+    margin-top: 0;
+    color: #347928; /* Updated heading color */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #C0EBA6; /* Highlighted label color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Add transition for focus effect */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #347928; /* Updated focus border color */
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #C0EBA6; /* Highlighted button background color */
+    color: #347928;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+form button:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+/* Error and Success Messages */
+.error {
+    color: #C0EBA6; /* Highlighted error color */
+    background-color: #ffe6e6;
+    padding: 10px;
+    border: 1px solid #C0EBA6; /* Highlighted border color */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: #347928; /* Updated success color */
+    background-color: #e6f9f9;
+    padding: 10px;
+    border: 1px solid #347928; /* Updated border color */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFFBE6; /* Updated footer background color */
+    color: #347928;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dashboard Styles */
+#dashboard-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in animation */
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+    color: #347928; /* Updated heading color */
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out; /* Add fade-in animation */
+}
+
+.dashboard-header p {
+    font-size: 1.2em;
+    color: #347928; /* Updated text color */
+}
+
+.dashboard-header .dashboard-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.primary-btn, .secondary-btn {
+    background-color: #C0EBA6; /* Highlighted button background color */
+    color: #347928;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+.error-msg {
+    color: #C0EBA6; /* Highlighted error color */
+    background-color: #ffe6e6;
+    padding: 10px;
+    border: 1px solid #C0EBA6; /* Highlighted border color */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Thank You Page Styles */
+#thank-you-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+}
+
+#thank-you-page h2 {
+    color: #347928; /* Updated heading color */
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out; /* Add slide-in animation */
+}
+
+#thank-you-page p {
+    font-size: 1.2em;
+    color: #347928; /* Updated text color */
+    animation: slideIn 1.5s ease-in-out; /* Add slide-in animation */
+}
+
+#thank-you-page .primary-btn {
+    background-color: #C0EBA6; /* Highlighted button background color */
+    color: #347928;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    animation: bounce 2s infinite; /* Add bounce animation */
+}
+
+#thank-you-page .primary-btn:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+#thank-you-page .thank-you-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Confirmation Page Styles */
+#confirmation-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+}
+
+#confirmation-page h2 {
+    color: #347928; /* Updated heading color */
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out; /* Add slide-in animation */
+}
+
+#confirmation-page p {
+    font-size: 1.2em;
+    color: #347928; /* Updated text color */
+    animation: slideIn 1.5s ease-in-out; /* Add slide-in animation */
+}
+
+#confirmation-page .primary-btn {
+    background-color: #C0EBA6; /* Highlighted button background color */
+    color: #347928;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    animation: bounce 2s infinite; /* Add bounce animation */
+}
+
+#confirmation-page .primary-btn:hover {
+    background-color: #FCCD2A; /* Highlighted hover color */
+}
+
+#confirmation-page .confirm-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .auth-section button, form button, .primary-btn, .secondary-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .auth-section p, .dashboard-header p, #thank-you-page p, #confirmation-page p {
+        font-size: 1em;
+    }
+
+    .auth-section button, form button, .primary-btn, .secondary-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .auth-section h2, .dashboard-header h2, #thank-you-page h2, #confirmation-page h2 {
+        font-size: 1.5em;
+    }
+
+    .auth-section p, .dashboard-header p, #thank-you-page p, #confirmation-page p {
+        font-size: 0.9em;
+    }
+
+    .auth-section button, form button, .primary-btn, .secondary-btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
