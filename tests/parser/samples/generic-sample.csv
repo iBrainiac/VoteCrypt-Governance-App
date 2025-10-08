@@ -1,0 +1,11 @@
+Date,Amount,Narrative,Balance
+2025-01-15,1000.00,Received from John,5000.00
+2025-01-15,-500.00,Withdraw at Agent,4500.00
+2025-01-16,-350.00,Buy Goods SUPERMARKET,4150.00
+2025-01-16,-800.00,Paybill KPLC,3350.00
+2025-01-17,2000.00,Received from Jane,5350.00
+2025-01-17,-300.00,Send to Alice,5050.00
+2025-01-18,-25.00,Fuliza Charge,5025.00
+2025-01-18,-100.00,Airtime,4925.00
+2025-01-19,50000.00,Salary Payment,54925.00
+2025-01-19,-1500.00,Water Bill,53425.00
