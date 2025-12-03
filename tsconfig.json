@@ -21,6 +21,8 @@
       "@/data/*": ["data/*"],
       "@/layouts/*": ["layouts/*"],
       "@/css/*": ["css/*"],
+      "@/lib/*": ["lib/*"],
+      "@/app/*": ["app/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
